@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CLOUDN9NE | Lean, Prozesse & KI</title>
+  <meta name="description" content="Operational Excellence, Lean Six Sigma, Produktionsplanung, Logistik und KI-gestützte Prozessverbesserung für Handwerk und Produktion.">
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+  <meta name="theme-color" content="#0b1220">
+  <style>
+    :root{
+      --ink:#0b1220;--ink2:#111b2e;--paper:#f6f8fb;--white:#fff;--muted:#607086;
+      --line:#dfe6ee;--accent:#43d8a5;--accent2:#8ef0cf;--radius:22px;--shadow:0 22px 60px rgba(11,18,32,.12)
+    }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+    .topbar{position:sticky;top:0;z-index:50;background:rgba(246,248,251,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(223,230,238,.8)}
+    .nav{display:flex;align-items:center;justify-content:space-between;height:76px;gap:28px}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.08em}.mark{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:var(--ink);color:var(--accent);font-weight:900}
+    .brand small{display:block;font-size:10px;letter-spacing:.22em;color:var(--muted);margin-top:-4px}
+    nav{display:flex;align-items:center;gap:24px;font-size:14px;font-weight:650}nav a:hover{color:#08785b}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--ink);color:white;padding:13px 20px;border-radius:999px;font-weight:750;box-shadow:0 10px 30px rgba(11,18,32,.15);transition:.2s}
+    .btn:hover{transform:translateY(-2px)}.btn.alt{background:transparent;color:var(--ink);border:1px solid var(--line);box-shadow:none}
+    .hero{background:
+      radial-gradient(circle at 85% 15%,rgba(67,216,165,.2),transparent 29%),
+      linear-gradient(180deg,#fff 0%,#f6f8fb 100%);padding:86px 0 68px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center}.eyebrow{display:inline-flex;gap:9px;align-items:center;font-size:12px;text-transform:uppercase;letter-spacing:.17em;font-weight:850;color:#08785b}
+    .eyebrow:before{content:"";width:28px;height:2px;background:var(--accent)}
+    h1{font-size:clamp(44px,6vw,76px);line-height:1.02;letter-spacing:-.045em;margin:16px 0 24px;max-width:900px}
+    h1 em{font-style:normal;color:#08785b}.lead{font-size:20px;color:#526176;max-width:720px;margin:0 0 30px}.actions{display:flex;gap:12px;flex-wrap:wrap}
+    .proof{display:flex;gap:10px;flex-wrap:wrap;margin-top:32px}.proof span{font-size:12px;font-weight:750;padding:9px 12px;border:1px solid var(--line);border-radius:999px;background:white}
+    .hero-panel{position:relative;background:var(--ink);color:white;padding:34px;border-radius:30px;box-shadow:var(--shadow)}
+    .hero-panel:after{content:"";position:absolute;right:-26px;top:-26px;width:120px;height:120px;border-radius:34px;border:1px solid rgba(142,240,207,.35);transform:rotate(18deg)}
+    .hero-panel .mini{color:var(--accent2);font-size:12px;text-transform:uppercase;letter-spacing:.15em;font-weight:800}.hero-panel h2{font-size:30px;line-height:1.15;margin:9px 0 24px}
+    .metric{display:grid;grid-template-columns:55px 1fr;gap:14px;padding:16px 0;border-top:1px solid rgba(255,255,255,.12)}.metric b{font-size:18px;color:var(--accent)}.metric span{color:#cbd4df;font-size:14px}
+    section{padding:86px 0}.section-head{display:grid;grid-template-columns:.75fr 1.25fr;gap:50px;align-items:end;margin-bottom:38px}.section-head h2{font-size:42px;line-height:1.12;margin:10px 0 0;letter-spacing:-.03em}.section-head p{color:var(--muted);margin:0}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:26px;min-height:220px;transition:.2s}.card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.card .num{font-size:12px;font-weight:900;color:#08785b;letter-spacing:.16em}.card h3{font-size:22px;margin:20px 0 8px}.card p{color:var(--muted);margin:0}
+    .dark{background:var(--ink);color:white}.dark .section-head p{color:#b7c2cf}.usecases{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.case{background:var(--ink2);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:24px}.case b{display:block;font-size:18px;margin-bottom:6px}.case span{color:#b7c2cf}.case i{font-style:normal;color:var(--accent);font-weight:850;margin-right:8px}
+    .process{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:white}.step{padding:26px;border-right:1px solid var(--line)}.step:last-child{border-right:0}.step strong{display:block;font-size:34px;color:#0b8f6b}.step h3{margin:8px 0}.step p{font-size:14px;color:var(--muted);margin:0}
+    .profile{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}.profile-box{background:white;border:1px solid var(--line);border-radius:28px;padding:32px}.profile-box h2{font-size:38px;line-height:1.12;margin:8px 0 18px}.profile-box p{color:var(--muted)}.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}.tags span{padding:8px 11px;border-radius:999px;background:#eef3f7;font-size:12px;font-weight:750}
+    .statement{background:linear-gradient(135deg,#0b1220 0%,#12273a 100%);border-radius:30px;padding:42px;color:white}.statement .quote{font-size:28px;line-height:1.35;letter-spacing:-.02em;margin:0}.statement .by{margin-top:20px;color:#b7c2cf;font-size:14px}
+    .topics{display:flex;flex-wrap:wrap;gap:10px}.topics span{background:white;border:1px solid var(--line);border-radius:999px;padding:10px 14px;font-size:13px;font-weight:700}
+    .contact{padding-top:40px}.contact-box{background:white;border:1px solid var(--line);border-radius:30px;padding:42px;display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center}.contact-box h2{font-size:38px;line-height:1.12;margin:8px 0}.contact-box p{margin:0;color:var(--muted)}
+    footer{padding:30px 0 50px;color:#6f7d90;font-size:13px}.foot{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding-top:22px}.legal{display:flex;gap:18px}
+@media(max-width:900px){nav a:not(.btn){display:none}.hero-grid,.profile,.section-head{grid-template-columns:1fr}.grid3{grid-template-columns:1fr 1fr}.process{grid-template-columns:1fr 1fr}.step:nth-child(2){border-right:0}.step{border-bottom:1px solid var(--line)}.usecases{grid-template-columns:1fr}.contact-box{grid-template-columns:1fr}.hero{padding-top:55px}}
+    @media(max-width:620px){.wrap{width:min(100% - 26px,1160px)}.grid3,.process{grid-template-columns:1fr}.step{border-right:0}h1{font-size:44px}.section-head h2,.profile-box h2,.contact-box h2{font-size:32px}.hero-panel{padding:26px}section{padding:66px 0}.brand span:last-child{font-size:14px}}
+  </style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap nav">
+    <a class="brand" href="#top"><span class="mark">C9</span><span>CLOUDN9NE<small>OPERATIONAL EXCELLENCE · LEAN · AI</small></span></a>
+    <nav>
+      <a href="#leistungen">Leistungen</a><a href="#ki">KI & Digitalisierung</a><a href="#profil">Profil</a>
+      <a class="btn" href="#kontakt">Erstgespräch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Operational Excellence für Handwerk & Produktion</span>
+        <h1>Weniger Reibung.<br>Mehr <em>Flow.</em></h1>
+        <p class="lead">Lean, Produktionsplanung und KI so verbinden, dass Abläufe einfacher, transparenter und wirtschaftlicher werden – praxisnah statt theoretisch.</p>
+        <div class="actions">
+          <a class="btn" href="#kontakt">Potenzial besprechen →</a>
+          <a class="btn alt" href="#leistungen">Leistungen ansehen</a>
+        </div>
+        <div class="proof"><span>Lean Six Sigma</span><span>Production Planning</span><span>SAP / ERP</span><span>Operational Excellence</span><span>Power BI</span></div>
+      </div>
+      <aside class="hero-panel">
+        <span class="mini">Prinzip</span>
+        <h2>Technologie folgt dem Prozess. Nicht umgekehrt.</h2>
+        <div class="metric"><b>01</b><span>Verschwendung und Engpässe sichtbar machen.</span></div>
+        <div class="metric"><b>02</b><span>Prozesse stabilisieren und Standards schaffen.</span></div>
+        <div class="metric"><b>03</b><span>Daten, Automatisierung und KI gezielt einsetzen.</span></div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="leistungen">
+    <div class="wrap">
+      <div class="section-head">
+        <div><span class="eyebrow">Leistungen</span><h2>Verbesserung, die im Alltag funktioniert.</h2></div>
+        <p>Für kleinere und mittlere Betriebe, die ihre Abläufe professionalisieren wollen – von Werkstatt und Materialfluss bis Produktionssteuerung und digitaler Unterstützung.</p>
+      </div>
+      <div class="grid3">
+        <article class="card"><span class="num">01 · LEAN</span><h3>Lean & Six Sigma</h3><p>Verschwendung erkennen, Ursachen systematisch analysieren und Verbesserungen dauerhaft verankern.</p></article>
+        <article class="card"><span class="num">02 · PLANUNG</span><h3>Produktionsplanung</h3><p>Kapazitäten, Termine und Prioritäten transparenter planen und operative Engpässe früher erkennen.</p></article>
+        <article class="card"><span class="num">03 · FLOW</span><h3>Logistik & Materialfluss</h3><p>Bestände, Nachschub, Wege und Schnittstellen entlang der Wertschöpfung gezielt verbessern.</p></article>
+        <article class="card"><span class="num">04 · SHOPFLOOR</span><h3>Shopfloor Management</h3><p>Kennzahlen, Regelkommunikation und Abweichungsmanagement nah am täglichen Geschehen etablieren.</p></article>
+        <article class="card"><span class="num">05 · SYSTEME</span><h3>SAP & ERP-Prozesse</h3><p>Stammdaten, Prozesslogik und Systemabläufe so ausrichten, dass sie die operative Arbeit unterstützen.</p></article>
+        <article class="card"><span class="num">06 · DATEN</span><h3>Power BI & Transparenz</h3><p>Relevante Kennzahlen verständlich aufbereiten, damit Entscheidungen schneller und faktenbasierter werden.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="ki" class="dark">
+    <div class="wrap">
+      <div class="section-head">
+        <div><span class="eyebrow">KI & Digitalisierung</span><h2>KI mit echtem Nutzen statt zusätzlichem Tool-Chaos.</h2></div>
+        <p>KI kann Routinearbeit reduzieren, Informationen schneller zugänglich machen und Analysen unterstützen. Der sinnvolle Einsatz beginnt jedoch mit einem sauberen Prozess und brauchbaren Daten.</p>
+      </div>
+      <div class="usecases">
+        <div class="case"><b><i>→</i>Arbeitsvorbereitung & Dokumentation</b><span>Entwürfe, Protokolle, Arbeitsanweisungen und Wissensaufbereitung schneller erstellen.</span></div>
+        <div class="case"><b><i>→</i>Planung & Priorisierung</b><span>Informationen bündeln, Engpasssignale strukturieren und Entscheidungsgrundlagen schneller aufbereiten.</span></div>
+        <div class="case"><b><i>→</i>Kennzahlen & Abweichungen</b><span>Daten verständlicher auswerten und Auffälligkeiten gezielter für Verbesserungen nutzen.</span></div>
+        <div class="case"><b><i>→</i>Administrative Entlastung</b><span>Wiederkehrende Informationssuche, Zusammenfassungen und Standardkommunikation vereinfachen.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div><span class="eyebrow">Vorgehen</span><h2>Vom Problem zum stabilen Prozess.</h2></div>
+        <p>Keine Standardfolie, sondern ein pragmatischer Verbesserungsweg mit klarer Priorität auf Nutzen, Umsetzbarkeit und Akzeptanz im Betrieb.</p>
+      </div>
+      <div class="process">
+        <div class="step"><strong>01</strong><h3>Verstehen</h3><p>Prozess, Engpässe und Zielbild gemeinsam klären.</p></div>
+        <div class="step"><strong>02</strong><h3>Messen</h3><p>Fakten, Daten und Ursachen statt Bauchgefühl betrachten.</p></div>
+        <div class="step"><strong>03</strong><h3>Verbessern</h3><p>Hebel priorisieren und Lösungen praxisnah umsetzen.</p></div>
+        <div class="step"><strong>04</strong><h3>Stabilisieren</h3><p>Standards, Kennzahlen und Routinen nachhaltig verankern.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="profil">
+    <div class="wrap profile">
+      <div class="statement">
+        <p class="quote">„Gute Verbesserung ist nicht kompliziert. Sie macht Arbeit einfacher, Entscheidungen klarer und Prozesse verlässlicher.“</p>
+        <div class="by">CLOUDN9NE · Lean · Prozesse · KI</div>
+      </div>
+      <div class="statement">
+        <p class="quote">„Gute Verbesserung ist nicht kompliziert. Sie macht Arbeit einfacher, Entscheidungen klarer und Prozesse verlässlicher.“</p>
+        <div class="by">CLOUDN9NE · Operational Excellence · Lean · AI</div>
+      </div>
+</div>
+      <div class="profile-box">
+        <span class="eyebrow">Profil</span>
+        <h2>Praxis aus Produktion, Planung, Logistik und Lean.</h2>
+        <p>CLOUDN9NE verbindet praktische Erfahrung aus Produktionsplanung, Logistik, Industrial Engineering, SAP-Prozessen und Lean Six Sigma mit moderner Prozessverbesserung und KI-gestützten Ansätzen für Handwerk und Produktion.</p>
+        <div class="tags"><span>Lean Six Sigma Black Belt</span><span>REFA Lean Professional</span><span>SAP S/4HANA</span><span>Production Planning</span><span>Logistics</span><span>Power BI</span><span>Scrum PSM I</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div><span class="eyebrow">Themen</span><h2>Wissen rund um moderne Operations.</h2></div>
+        <p>Die Website ist so vorbereitet, dass daraus später ein Fachbereich mit kurzen, praxisorientierten Beiträgen entstehen kann.</p>
+      </div>
+      <div class="topics"><span>KI im Lean Management</span><span>Lean Six Sigma</span><span>Kaizen</span><span>7+1 Verschwendungsarten</span><span>Lean Logistik</span><span>Shopfloor 4.0</span><span>OEE</span><span>Qualitätsmanagement</span><span>Human-Centered Lean</span><span>Produktionsplanung</span><span>KI-gestützte Fertigung</span><span>Operational Excellence</span></div>
+    </div>
+  </section>
+
+  <section id="kontakt" class="contact">
+    <div class="wrap contact-box">
+      <div>
+        <span class="eyebrow">Kontakt</span>
+        <h2>Wo verliert Ihr Betrieb heute Zeit, Qualität oder Transparenz?</h2>
+        <p>Ein unverbindlicher Austausch kann zeigen, welcher Hebel zuerst sinnvoll ist.<br><strong>cloudn9ne.lean@gmail.com</strong></p>
+      </div>
+      <a class="btn" href="mailto:cloudn9ne.lean@gmail.com?subject=Anfrage%20über%20CLOUDN9NE">Kontakt aufnehmen →</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><b>CLOUDN9NE</b><br>Lean · Prozesse · KI</div>
+    <div class="legal"><a href="#" onclick="alert('Impressum vor öffentlicher Veröffentlichung vervollständigen.');return false;">Impressum</a><a href="#" onclick="alert('Datenschutzerklärung vor öffentlicher Veröffentlichung vervollständigen.');return false;">Datenschutz</a></div>
+  </div>
+</footer>
+</body>
+</html>
